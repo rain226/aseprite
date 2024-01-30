@@ -28,11 +28,6 @@ jobs:
     - name: Install Dependencies
       shell: bash
       run: |
-
-        if
-    - name: Generating Makefiles
-      shell: bash
-      run: |
         if [[ "${{ runner.os }}" == "Windows" ]] ; then
           export enable_ccache=off
         else
